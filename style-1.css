@@ -1,0 +1,31 @@
+button{
+    border: 0;
+    cursor: pointer;
+    position: relative;
+}
+button div {
+    background-color: rgb(255, 70, 85);
+    padding: 1.2rem 5.5rem;
+    position: relative;
+    overflow: hidden;
+}
+button a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #eceBe1;
+    text-transform: uppercase;
+    z-index: 2;
+}
+button::before,
+button::after {
+    content: "";
+    position: absolute;
+    width: 105%;
+    height: 50%;
+    background-color: transparent;
+    border: 1px solid rgb(134, 129, 124);
+    left: -2.5%;
+    z-index: -1;
+}
